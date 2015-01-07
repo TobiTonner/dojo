@@ -19,6 +19,7 @@ define(["./has!dom-addeventlistener?:./aspect", "./_base/kernel", "./sniff"], fu
 				var EventDelegate = function(){};
 				EventDelegate.prototype =
 					document.createEvent("MouseEvents"); // original event
+
 				// Attempt to modify a property of an event delegate and check if
 				// it succeeds. Depending on browsers and on whether dojo/on's
 				// strict mode is stripped in a Dojo build, there are 3 known behaviors:
